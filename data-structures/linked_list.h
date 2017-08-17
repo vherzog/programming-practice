@@ -4,12 +4,15 @@
 
 
 class Node {
+public:
   int data;
   Node* next;
   Node(int value);
-}
+};
 
 class LinkedList {
+public:
+  Node* head;
   LinkedList();
   LinkedList(int value);
   ~LinkedList();
@@ -23,9 +26,11 @@ class LinkedList {
   int front();
   int back();
   void insert(int index, int value);
-  void erase(int index) 
-  void print_list() 
-  int nth_from_end(int n) 
-  void reverse() 
-  void remove_value(int value)
-}
+  void erase(int index);
+  void print_list();
+  int nth_from_end(int n);
+  void reverse();
+  void remove_value(int value);
+};
+
+#endif /* linked_list.h */
